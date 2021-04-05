@@ -243,15 +243,13 @@ button:focus {
   position: relative;
   padding-left: 6rem;
   margin-right: 3rem;
-  -webkit-box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
-          box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
   -webkit-transition: 0.2s ease box-shadow;
   transition: 0.2s ease box-shadow;
 }
 
 .banner-control__btn-main:hover {
-  -webkit-box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
-          box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
+  -webkit-box-shadow: 0px 4px 40px rgba(50, 108, 255, 0.2);
+          box-shadow: 0px 4px 40px rgba(50, 108, 255, 0.2);
 }
 
 .banner-control__btn-main::after {
@@ -268,12 +266,12 @@ button:focus {
 .banner-control__btn-more {
   background-color: #fff;
   color: #323232;
-  -webkit-transition: 0.2s ease background-color, 0.2s ease color;
-  transition: 0.2s ease background-color, 0.2s ease color;
+  -webkit-transition: 0.2s ease box-shadow;
+  transition: 0.2s ease box-shadow;
 }
 
 .banner-control__btn-more:hover {
-  color: #fff;
-  background-color: transparent;
+  -webkit-box-shadow: 0px 4px 40px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 4px 40px rgba(255, 255, 255, 0.2);
 }
 /*# sourceMappingURL=style.css.map */

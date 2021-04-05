@@ -206,10 +206,9 @@ button {
             position: relative;
             padding-left: 6rem;
             margin-right: 3rem;
-            box-shadow: 0px 4px 50px rgba($bg-gradient-safe, 0.5);
             transition: 0.2s ease box-shadow;
             &:hover {
-                box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
+                box-shadow: 0px 4px 40px rgba($bg-gradient-safe, 0.2);
             }
             &::after {
                 content: '';
@@ -226,10 +225,9 @@ button {
         &__btn-more {
             background-color: $white;
             color:#323232;
-            transition: 0.2s ease background-color, 0.2s ease color;
+            transition: 0.2s ease box-shadow;
             &:hover {
-                color: $white;
-                background-color: transparent;
+                box-shadow: 0px 4px 40px rgba($white, 0.2);
             }
         }
     }
