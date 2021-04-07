@@ -119,15 +119,71 @@ button {
         }
     }
 }
+.section {
+    padding-top: 5rem;
+    &__h2 {
+        font-size: 2.8rem;
+        line-height: 2rem;
+        padding-left: 2rem;
+        padding-right: 3rem;
+        position: relative;
+        font-weight: 700;
+        display: inline-block;
+        &::before {
+            content: '';
+            display: block;
+            width: .8rem;
+            height: 3.5rem;
+            background: $bg-gradient-safe; //applied if the gradient cannot be loaded
+            background: $bg-gradient;
+            border-radius: 5rem;
+            position: absolute;
+            left: 0;
+            top: calc(50% - 1.7rem);
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: .9rem;
+            height: 1.5rem;
+            background-image: url(images/arrow.svg);
+            background-repeat: no-repeat;
+            background-size: color;
+            position: absolute;
+            right: 0;
+            top: calc(50% - .7rem);
+        }
+        &-link {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    &__btn {
+        border: none;
+        border-radius: 10rem;
+        padding: 1.5rem 3rem;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 800;
+        cursor: pointer;
+        background: $bg-gradient-safe; //applied if the gradient cannot be loaded
+        background: $bg-gradient;
+        color: $white;
+        margin-top: 5.5rem;
+        transition: 0.2s ease box-shadow;
+        &:hover {
+            box-shadow: 0px 4px 40px rgba($bg-gradient-safe, 0.5);
+        }
+    }
+}
 .section-banner {
     border-bottom: .1rem solid #2F2E2E;
     position: relative;
     overflow: hidden;
-    height: 764px;
     &__image {
         position: absolute;
         right: 0;
         z-index: -1;
+        height: 100%;
     }
 }
 .banner {
@@ -208,7 +264,7 @@ button {
             margin-right: 3rem;
             transition: 0.2s ease box-shadow;
             &:hover {
-                box-shadow: 0px 4px 40px rgba($bg-gradient-safe, 0.2);
+                box-shadow: 0px 4px 40px rgba($bg-gradient-safe, 0.5);
             }
             &::after {
                 content: '';
@@ -227,8 +283,37 @@ button {
             color:#323232;
             transition: 0.2s ease box-shadow;
             &:hover {
-                box-shadow: 0px 4px 40px rgba($white, 0.2);
+                box-shadow: 0px 4px 40px rgba($white, 0.3);
             }
         }
+    }
+}
+
+.movies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.1rem;
+    &-item {
+        filter: drop-shadow(0px 0px 0px rgba(44, 176, 249, 0.0));
+        transition: 0.2s ease filter;
+        flex: 0 0 14%;
+        &:hover {
+            filter: drop-shadow(0px 0px 20px rgba(44, 176, 249, 0.5)); 
+        }
+    }
+    &__link {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 30.9rem;
+        display: block;
+    }
+    &__img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
     }
 }
