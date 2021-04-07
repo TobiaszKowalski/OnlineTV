@@ -468,6 +468,54 @@ button:focus {
   margin: 0;
   margin-top: .8rem;
 }
+
+.actors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 2.1rem;
+}
+
+.actors-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 14%;
+          flex: 0 0 14%;
+}
+
+.actors__title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.actors__link {
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  width: 19rem;
+  height: 19rem;
+  border-radius: 100%;
+  display: block;
+}
+
+.actors__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 19rem;
+  height: 19rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -562,6 +610,31 @@ button:focus {
           </div>
           <div class="genres-item genres-item__documentary"><img src="../src/images/genres/documentary_logo.svg" alt="">
             <h3 class="genres__title">Documentary  </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section"> 
+      <div class="container"> 
+        <h2 class="section__h2"> <a class="section__h2-link" href="#">Popular Actors & Directors</a></h2>
+        <div class="actors">
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor1.png" alt=""></a>
+            <h3 class="actors__title">Samantha Bowen</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor2.png" alt=""></a>
+            <h3 class="actors__title">Rhys Birch</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor3.png" alt=""></a>
+            <h3 class="actors__title">James Holloway</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor4.png" alt=""></a>
+            <h3 class="actors__title">Joshua Walton</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor5.png" alt=""></a>
+            <h3 class="actors__title">Patrick Elliott</h3>
+          </div>
+          <div class="actors-item"> <a class="actors__link" href="#"> <img class="actors__img" src="../src/images/actors/actor6.png" alt=""></a>
+            <h3 class="actors__title">Morgan O'Neill</h3>
           </div>
         </div>
       </div>

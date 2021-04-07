@@ -370,3 +370,36 @@ button {
         margin-top: .8rem;
     }
 }
+.actors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.1rem;
+    &-item {
+        flex: 0 0 14%;
+    }
+    &__title {
+        color: $white;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    &__link{
+        overflow: hidden;
+        text-decoration: none;
+        position: relative;
+        width: 19rem;
+        height: 19rem;
+        border-radius: 100%;
+        display: block;
+    }
+    &__img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 19rem;
+        height: 19rem;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+}
