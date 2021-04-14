@@ -4,7 +4,7 @@ doctype html
 html(lang="en")
   head
     link(rel="preconnect", href="https://fonts.gstatic.com")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;700;800&display=swap")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700;800&display=swap")
     title= pageTitle
     style
       include styles/normalize.css 
@@ -12,138 +12,6 @@ html(lang="en")
   body
     include modules/header
 
-    section.section-banner 
-      img(src="../src/images/banner.png", alt="Banner").section-banner__image
-      .container 
-        .banner
-          h1.banner__title Zack Snyder's Justice League
-          .banner-info 
-            span.banner-info__year 2021
-            span.banner-info__age 18+
-            span.banner-info__time 4h 2min
-            span.banner-info__rating 8.8
-          p.banner__text Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
-          .banner-control 
-            button.banner-control__btn.banner-control__btn-main Watch
-            button.banner-control__btn.banner-control__btn-more More information
-    section.section 
-      .container 
-        h2.section__h2 
-          a(href="#").section__h2-link Trending TV Shows
-        .movies 
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 1_01.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 1_02.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 1_03.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 1_04.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 1_05.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 1_06.png", alt="").movies__img
-    section.section 
-      .container 
-        h2.section__h2 
-          a(href="#").section__h2-link Trending Movies
-        .movies 
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 2_01.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 2_02.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 2_03.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 2_04.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 2_05.png", alt="").movies__img
-          .movies-item 
-            a(href="#").movies__link 
-              img(src="../src/images/posters/poster 2_06.png", alt="").movies__img
-        button.section__btn See more 
-    section.section 
-      .container 
-        h2.section__h2 
-          a(href="#").section__h2-link Popular genres
-        .genres 
-          .genres-item.genres-item__romance
-            img(src="../src/images/genres/romance_logo.svg", alt="")
-            h3.genres__title Romance    
-          .genres-item.genres-item__drama
-            img(src="../src/images/genres/drama_logo.svg", alt="")
-            h3.genres__title Drama    
-          .genres-item.genres-item__historical
-            img(src="../src/images/genres/historical_logo.svg", alt="")
-            h3.genres__title Historical    
-          .genres-item.genres-item__action
-            img(src="../src/images/genres/action_logo.svg", alt="")
-            h3.genres__title Action    
-          .genres-item.genres-item__scifi
-            img(src="../src/images/genres/scifi_logo.svg", alt="")
-            h3.genres__title Sci-fi   
-          .genres-item.genres-item__horror
-            img(src="../src/images/genres/horror_logo.svg", alt="")
-            h3.genres__title Horror    
-          .genres-item.genres-item__comedy
-            img(src="../src/images/genres/comedy_logo.svg", alt="")
-            h3.genres__title Comedy    
-          .genres-item.genres-item__documentary
-            img(src="../src/images/genres/documentary_logo.svg", alt="")
-            h3.genres__title Documentary  
-    section.section 
-      .container 
-        h2.section__h2 
-          a(href="#").section__h2-link Popular Actors & Directors
-        .actors
-          .actors-item 
-            a(href="#").actors__link 
-              img(src="../src/images/actors/actor1.png", alt="").actors__img
-            h3.actors__title Samantha Bowen
-          .actors-item 
-            a(href="#").actors__link 
-              img(src="../src/images/actors/actor2.png", alt="").actors__img
-            h3.actors__title Rhys Birch
-          .actors-item 
-            a(href="#").actors__link 
-              img(src="../src/images/actors/actor3.png", alt="").actors__img
-            h3.actors__title James Holloway
-          .actors-item 
-            a(href="#").actors__link 
-              img(src="../src/images/actors/actor4.png", alt="").actors__img
-            h3.actors__title Joshua Walton
-          .actors-item 
-            a(href="#").actors__link 
-              img(src="../src/images/actors/actor5.png", alt="").actors__img
-            h3.actors__title Patrick Elliott
-          .actors-item 
-            a(href="#").actors__link 
-              img(src="../src/images/actors/actor6.png", alt="").actors__img
-            h3.actors__title Morgan O'Neill
-    section.section 
-      .container
-        .marketing
-          .marketing-item
-            a(href="#").marketing__link.marketing__link-first  
-              img(src="../src/images/marketing/marketing01.png", alt="").marketing__img
-          .marketing-item
-            a(href="#").marketing__link.marketing__link-second  
-              img(src="../src/images/marketing/marketing02.png", alt="").marketing__img
-    section.section 
-      .container
-        .registration
-          h2.registration__title Are You New Here ? <br> Don’t wait, Register Now. 
-          button.registration__btn Register Now 
+    include modules/content
 
     include modules/footer
